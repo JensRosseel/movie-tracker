@@ -1,12 +1,11 @@
 .header{
     width: 100%;
-    cursor: pointer;
-    position: fixed;
     display: flex;
     justify-content: center;
     text-transform: uppercase;
     font-size: 5vw;
     padding: 10px;
+    background-color: #2D313A;
     color: white;
     z-index: 100;
 }

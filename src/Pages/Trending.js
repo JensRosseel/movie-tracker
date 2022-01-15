@@ -16,9 +16,8 @@ const Trending = () => {
     }, [])
 
     return (
-        <div>
-            <span className="pageTitle">Trending</span>
-            <div className="trending">
+        <div className="page">
+            <div className="cards">
                 {
                     content && content.map((c) => (
                         <Card

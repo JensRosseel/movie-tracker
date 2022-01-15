@@ -7,6 +7,7 @@ import Trending from './Pages/Trending';
 import Movies from './Pages/Movies';
 import Series from './Pages/Series';
 import Search from './Pages/Search';
+import './Pages/Page.css'
 
 function App() {
   return (
