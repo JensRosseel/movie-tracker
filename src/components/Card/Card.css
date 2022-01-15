@@ -1,0 +1,26 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+    background-color: #282c34;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.card b{
+    padding-top: 5px;
+}
+
+.subText{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
