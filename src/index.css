@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
-
 body{
   margin: 0 auto;
   background-color: #0E1524;
-  font-family: Nunito;
+  font-family: Arial;
   color: white;
 }
