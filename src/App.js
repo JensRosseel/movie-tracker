@@ -2,7 +2,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Nav from './components/Nav';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Container from '@material-ui/core/container';
+import Container from '@mui/material/Container';
 import Trending from './Pages/Trending';
 import Movies from './Pages/Movies';
 import Series from './Pages/Series';

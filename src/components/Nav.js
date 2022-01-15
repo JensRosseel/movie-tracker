@@ -1,11 +1,11 @@
 import React, { useEffect }from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import BottomNavigation from "@material-ui/core/BottomNavigation";
-import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
-import TvIcon from "@material-ui/icons/Tv";
-import MovieIcon from "@material-ui/icons/Movie";
-import SearchIcon from "@material-ui/icons/Search";
-import WhatshotIcon from "@material-ui/icons/Whatshot";
+import { makeStyles } from "@mui/styles";
+import BottomNavigation from "@mui/material/BottomNavigation";
+import BottomNavigationAction from "@mui/material/BottomNavigationAction";
+import TvIcon from "@mui/icons-material/Tv";
+import MovieIcon from "@mui/icons-material/Movie";
+import SearchIcon from "@mui/icons-material/Search";
+import WhatshotIcon from "@mui/icons-material/Whatshot";
 import { useNavigate } from "react-router-dom";
 
 const useStyles = makeStyles({
@@ -45,7 +45,6 @@ export default function SimpleBottomNavigation() {
       onChange={(event, newValue) => {
         setValue(newValue);
       }}
-      showLabels
       className={classes.root}
     >
       <BottomNavigationAction

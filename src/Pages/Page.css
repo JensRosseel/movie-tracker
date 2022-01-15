@@ -1,6 +1,9 @@
+.page{
+    margin-bottom: 6%;
+}
+
 .cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 6%;
 }
