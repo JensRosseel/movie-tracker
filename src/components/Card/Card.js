@@ -1,6 +1,7 @@
 import { Badge } from '@mui/material'
 import React from 'react'
 import { img_300, unavailable } from '../../config'
+import CustomModal from '../CustomModal/CustomModal';
 import './Card.css'
 
 const Card = ({
@@ -12,7 +13,7 @@ const Card = ({
         vote_average
     }) => {
         return (
-            <div className="card">
+            <CustomModal media_type={media_type} id={id}>
                 <Badge badgeContent={vote_average} color={vote_average>5 ? 'primary' : 'secondary'} />
                     <img src={poster ? `${img_300}/${poster}` : unavailable} alt={title} />
                 <b className="title">{title}</b>
@@ -20,7 +21,7 @@ const Card = ({
                     <span>{media_type === 'tv' ? 'TV Series' : "Movie"}</span>
                     <span>{date}</span>
                 </div>
-            </div>
+            </CustomModal>
         )
 }
 

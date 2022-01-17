@@ -49,6 +49,7 @@ const Search = () => {
                     <Button onClick={fetchSearch} variant='contained' style={{ marginLeft: 10 }} ><SearchIcon /></Button>
                 </div>
                 <Tabs 
+                    centered
                     value={type} 
                     indicatorColor='primary' 
                     textColor='primary'
