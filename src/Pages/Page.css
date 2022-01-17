@@ -7,3 +7,15 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+@media only screen and (max-width: 1080px){
+    .page{
+        margin-bottom: 10%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .page {
+        margin-bottom: 20%;
+    }
+}

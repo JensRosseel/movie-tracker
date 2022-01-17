@@ -18,7 +18,7 @@ const CustomPagination = ({ setPage, numOfPages }) => {
     return (
         <div className="pagination">
             <ThemeProvider theme={theme}>
-                <Pagination count={numOfPages} onChange={(e) => pageChange(e.target.textContent)} />
+                <Pagination count={numOfPages} onChange={(e) => pageChange(e.target.textContent)} hideNextButton hidePrevButton />
             </ThemeProvider>
         </div>
     )
