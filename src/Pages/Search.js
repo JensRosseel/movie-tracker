@@ -53,7 +53,7 @@ const Search = () => {
                     value={type} 
                     indicatorColor='primary' 
                     textColor='primary'
-                    onChange={(event, newValue) => {
+                    onChange={(newValue) => {
                         setType(newValue);
                         setPage(1);
                     }}
@@ -72,10 +72,13 @@ const Search = () => {
                             poster={c.poster_path} 
                             title={c.title || c.name} 
                             date={c.first_air_date || c.release_date}
-                            media_type={c.media_type}
+                            media_type={type ? "tv" : "movie"}
                             vote_average={c.vote_average}
                         />
                     ))
+                }
+                {
+                    searchText && !content && (type ? <h2>No Series Found</h2> : <h2>No Movies Found</h2>)
                 }
                 </div>
                 {numOfPages>1 && (
