@@ -7,10 +7,11 @@
     background-color: #282c34;
     border-radius: 5px;
     text-align: center;
+    transition: transform 250ms ease;
 }
 
 .card:hover{
-    background-color: white;
+    transform: scale(1.05);
     cursor: pointer;
 }
 
